@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Nested Selectors</title>
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+  <h1>Nested Selectors in CSS</h1>
+
+	<p>Often, we may find ourselves wanting to style things <em>differently</em> depending on their <em>context</em>.</p>
+
+	<p>Take emphasis as an example. In typical copy, presented in a roman (non-italic) type, we may wish to add <em>emphasis</em> to a word or phrase by using <em>italics</em>.</p>
+
+	<p>But what if we want to quote a block of text which also emphasizes something?</p>
+
+	<blockquote>
+  		<p>This is a quote from some famous person who undoubtedly has something <em>very important</em> to say.</p>
+	</blockquote>
+
+	<p>If we want our block quote to be set in italics by default, then the visual style for emphasis needs to be different, <em>but only when inside a blockquote</em>.</p>
+
+	<p>This is where <em>nested selectors</em> come in handy.</p>
+
+	Now you can practice on our unordered list.  Select only the first li's in the list to have a background color of red.
+	And select all list items to have a font weight of bold.
+
+	<ul>
+	  <li>List item 1</li>
+	  <li>List item 2</li>
+	    <ol>
+	      <li>Nested li</li>
+	      <li>Nested li</li>
+	    </ol>
+	  <li>List item 3</li>
+	</ul>
+	<ol>
+		<li>Coffee</li>
+		<li>tea</li>
+		<li>beans</li>
+	</ol>
+	<ol>
+		<li>Socks</li>
+		<li>Shoes</li>
+		<li>Hat</li>
+	</ol>
+
+	<p>
+		Bonus:
+		<ul>
+			<li>Style all ordered lists that are immediate adjacent siblings to unordered lists to have a border around them.
+			</li>
+			<li>
+			Style all ordered lists on the same level as unordered lists to also have blue backgrounds</li>
+		</ul>
+	</p>
+</body>
+
+</html>
